@@ -6,24 +6,19 @@
 #include <iostream>
 
 #include "richelbilderbeekprogram.h"
-#include "testtimer.h"
 #include "simplelinearregression.h"
-#include "trace.h"
 #pragma GCC diagnostic pop
 
 int ribi::ToolTestSimpleLinearRegressionMenuDialog::ExecuteSpecific(const std::vector<std::string>& argv) noexcept
 {
-  #ifndef NDEBUG
-  Test();
-  #endif
   const int argc = static_cast<int>(argv.size());
   if (argc == 1)
   {
     std::cout << GetHelp() << '\n';
-    return 1;
+    return 0;
   }
   assert(!"TODO");
-  return 1;
+  return 0;
 }
 
 ribi::About ribi::ToolTestSimpleLinearRegressionMenuDialog::GetAbout() const noexcept
@@ -37,7 +32,6 @@ ribi::About ribi::ToolTestSimpleLinearRegressionMenuDialog::GetAbout() const noe
     "http://www.richelbilderbeek.nl/ToolTestSimpleLinearRegression.htm",
     GetVersion(),
     GetVersionHistory());
-  a.AddLibrary("Trace version: " + Trace::GetVersion());
   a.AddLibrary("SimpleLinearRegression version: " + SimpleLinearRegression::GetVersion());
   return a;
 }
@@ -78,15 +72,3 @@ std::vector<std::string> ribi::ToolTestSimpleLinearRegressionMenuDialog::GetVers
     "2013-11-05: version 1.2: conformized for ProjectRichelBilderbeekConsole"
   };
 }
-
-#ifndef NDEBUG
-void ribi::ToolTestSimpleLinearRegressionMenuDialog::Test() noexcept
-{
-  {
-    static bool is_tested{false};
-    if (is_tested) return;
-    is_tested = true;
-  }
-  const TestTimer test_timer(__func__,__FILE__,1.0);
-}
-#endif

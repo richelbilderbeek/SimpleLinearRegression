@@ -12,8 +12,6 @@
 #include "qtaboutdialog.h"
 #include "qttestsimplelinearregressionmaindialog.h"
 #include "qthideandshowdialog.h"
-#include "testtimer.h"
-#include "trace.h"
 #include "ui_qttestsimplelinearregressionmenudialog.h"
 
 #pragma GCC diagnostic pop
@@ -23,9 +21,6 @@ ribi::QtToolTestSimpleLinearRegressionMenuDialog::QtToolTestSimpleLinearRegressi
   : QtHideAndShowDialog(parent),
     ui(new Ui::QtToolTestSimpleLinearRegressionMenuDialog)
 {
-  #ifndef NDEBUG
-  Test();
-  #endif
   ui->setupUi(this);
 }
 
@@ -63,16 +58,8 @@ void ribi::QtToolTestSimpleLinearRegressionMenuDialog::on_button_start_clicked()
   ShowChild(&d);
 }
 
-#ifndef NDEBUG
 void ribi::QtToolTestSimpleLinearRegressionMenuDialog::Test() noexcept
 {
-  {
-    static bool is_tested{false};
-    if (is_tested) return;
-    is_tested = true;
-  }
-  QtToolTestSimpleLinearRegressionMainDialog();
-  const TestTimer test_timer(__func__,__FILE__,1.0);
   //Let Boost.Units check for compiling
   {
     typedef boost::units::quantity<boost::units::si::time> Time;
@@ -107,4 +94,3 @@ void ribi::QtToolTestSimpleLinearRegressionMenuDialog::Test() noexcept
 
   }
 }
-#endif

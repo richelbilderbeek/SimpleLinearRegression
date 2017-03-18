@@ -14,7 +14,7 @@ namespace ribi {
 
 class QtToolTestSimpleLinearRegressionMenuDialog : public QtHideAndShowDialog
 {
-  Q_OBJECT
+  Q_OBJECT //!OCLINT
 
 public:
   explicit QtToolTestSimpleLinearRegressionMenuDialog(QWidget *parent = 0) noexcept;
@@ -32,10 +32,6 @@ private slots:
   void on_button_about_clicked() noexcept;
   void on_button_quit_clicked() noexcept;
   void on_button_start_clicked() noexcept;
-
-  #ifndef NDEBUG
-  static void Test() noexcept;
-  #endif
 };
 
 } //~namespace ribi

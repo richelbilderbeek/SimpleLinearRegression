@@ -31,9 +31,6 @@ ribi::QtToolTestSimpleLinearRegressionMainDialog::QtToolTestSimpleLinearRegressi
     m_xs{},
     m_ys{}
 {
-  #ifndef NDEBUG
-  Test();
-  #endif
   ui->setupUi(this);
 
   //Set up the plot
@@ -171,15 +168,3 @@ void ribi::QtToolTestSimpleLinearRegressionMainDialog::Plot() noexcept
   assert(m_plot);
   m_plot->replot();
 }
-
-#ifndef NDEBUG
-void ribi::QtToolTestSimpleLinearRegressionMainDialog::Test() noexcept
-{
-  {
-    static bool is_tested{false};
-    if (is_tested) return;
-    is_tested = true;
-  }
-  const TestTimer test_timer(__func__,__FILE__,1.0);
-}
-#endif

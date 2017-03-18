@@ -19,7 +19,7 @@ namespace ribi {
 
 class QtToolTestSimpleLinearRegressionMainDialog : public QtHideAndShowDialog
 {
-  Q_OBJECT
+  Q_OBJECT //!OCLINT
   
 public:
   explicit QtToolTestSimpleLinearRegressionMainDialog(QWidget *parent = 0) noexcept;
@@ -45,10 +45,6 @@ private:
   std::vector<double> m_ys;
 
   void Plot() noexcept;
-
-  #ifndef NDEBUG
-  static void Test() noexcept;
-  #endif
 };
 
 } //~namespace ribi
