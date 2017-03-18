@@ -1,11 +1,9 @@
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Weffc++"
-#include "testsimplelinearregressionmenudialog.h"
+#include "simplelinearregressionmenudialog.h"
 
 #include <cassert>
 #include <iostream>
-
-#include "richelbilderbeekprogram.h"
 #include "simplelinearregression.h"
 #pragma GCC diagnostic pop
 
@@ -48,15 +46,6 @@ ribi::Help ribi::ToolTestSimpleLinearRegressionMenuDialog::GetHelp() const noexc
 
     }
   );
-}
-
-boost::shared_ptr<const ribi::Program> ribi::ToolTestSimpleLinearRegressionMenuDialog::GetProgram() const noexcept
-{
-  const boost::shared_ptr<const Program> p {
-    new ProgramTestSimpleLinearRegression
-  };
-  assert(p);
-  return p;
 }
 
 std::string ribi::ToolTestSimpleLinearRegressionMenuDialog::GetVersion() const noexcept

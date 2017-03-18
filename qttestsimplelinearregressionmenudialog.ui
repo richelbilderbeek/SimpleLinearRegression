@@ -57,7 +57,7 @@ background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0  #808080, 
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="ToolTestSimpleLinearRegression.qrc">:/images/ToolTestSimpleLinearRegressionWelcome.png</pixmap>
+      <pixmap resource="SimpleLinearRegression.qrc">:/images/SimpleLinearRegressionWelcome.png</pixmap>
      </property>
     </widget>
    </item>
@@ -69,7 +69,7 @@ background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0  #808080, 
   <tabstop>button_quit</tabstop>
  </tabstops>
  <resources>
-  <include location="ToolTestSimpleLinearRegression.qrc"/>
+  <include location="SimpleLinearRegression.qrc"/>
  </resources>
  <connections/>
 </ui>

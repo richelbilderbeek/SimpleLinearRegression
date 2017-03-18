@@ -16,8 +16,6 @@
 #endif
 
 #include "simplelinearregression.h"
-#include "testtimer.h"
-#include "trace.h"
 #include "ui_qttestsimplelinearregressionmaindialog.h"
 
 #pragma GCC diagnostic pop
@@ -106,8 +104,6 @@ ribi::QtToolTestSimpleLinearRegressionMainDialog::QtToolTestSimpleLinearRegressi
 
   ui->box_int_x->setValue(0);
   ui->box_double_y->setValue(0.0);
-
-  TRACE_FUNC();
 }
 
 ribi::QtToolTestSimpleLinearRegressionMainDialog::~QtToolTestSimpleLinearRegressionMainDialog() noexcept
