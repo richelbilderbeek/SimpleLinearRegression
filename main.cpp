@@ -76,10 +76,10 @@ int main()
     const double stretch_y = static_cast<double>(max_y) / max_y_co;
 
     const std::size_t n_values = xs.size();
-    for (std::size_t i=0; i!=n_values; ++i)
+    for (std::size_t j=0; j!=n_values; ++j)
     {
       //c.DrawDot(xs[i] * stretch_x,ys[i] * stretch_y);
-      c.DrawCircle(xs[i] * stretch_x,ys[i] * stretch_y,ray);
+      c.DrawCircle(xs[j] * stretch_x,ys[j] * stretch_y,ray);
     }
     c.DrawLine(
       stretch_x * 0.0,
