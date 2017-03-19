@@ -7,6 +7,6 @@ develop|[![Build Status](https://travis-ci.org/richelbilderbeek/SimpleLinearRegr
 
 Tool to do a simple linear regression, written in C++ and Qt.
 
-![Main dialog](Screenshots/MainDdialog.png)
+![Main dialog](Screenshots/MainDialog.png)
 
 ![Menu](Screenshots/Menu.png)
