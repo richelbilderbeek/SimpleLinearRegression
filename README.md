@@ -1,5 +1,7 @@
 # SimpleLinearRegression
 
+[Go to the nicely rendered website](https://richelbilderbeek.github.io/SimpleLinearRegression/).
+
 Branch|[![Travis CI logo](TravisCI.png)](https://travis-ci.org)|[![Codecov logo](Codecov.png)](https://www.codecov.io)
 ---|---|---
 master|[![Build Status](https://travis-ci.org/richelbilderbeek/SimpleLinearRegression.svg?branch=master)](https://travis-ci.org/richelbilderbeek/SimpleLinearRegression)|[![codecov.io](https://codecov.io/github/richelbilderbeek/SimpleLinearRegression/coverage.svg?branch=master)](https://codecov.io/github/richelbilderbeek/SimpleLinearRegression/branch/master)
