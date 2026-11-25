@@ -6,7 +6,7 @@ include(../RibiClasses/CppQtAboutDialog/CppQtAboutDialog.pri)
 include(../RibiClasses/CppQtHideAndShowDialog/CppQtHideAndShowDialog.pri)
 include(../RibiLibraries/Qwt.pri)
 
-include(../RibiClasses/CppApproximator/CppApproximator.pri)
+include(../Approximator/Approximator.pri)
 include(../RibiClasses/CppSimpleLinearRegression/CppSimpleLinearRegression.pri)
 
 include(SimpleLinearRegressionDesktop.pri)

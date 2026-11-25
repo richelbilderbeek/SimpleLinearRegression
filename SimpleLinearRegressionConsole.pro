@@ -3,7 +3,7 @@ include(../RibiClasses/CppFileIo/CppFileIo.pri)
 include(../RibiClasses/CppHelp/CppHelp.pri)
 include(../RibiClasses/CppMenuDialog/CppMenuDialog.pri)
 
-include(../RibiClasses/CppApproximator/CppApproximator.pri)
+include(../Approximator/Approximator.pri)
 include(../RibiClasses/CppCanvas/CppCanvas.pri)
 include(../RibiClasses/CppContainer/CppContainer.pri)
 include(../DotMatrix/DotMatrix.pri)
