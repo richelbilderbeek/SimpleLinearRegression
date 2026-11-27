@@ -1,11 +1,8 @@
 # SimpleLinearRegression
 
-[Go to the nicely rendered website](https://richelbilderbeek.github.io/SimpleLinearRegression/).
+[![Codecov](https://codecov.io/gh/richelbilderbeek/SimpleLinearRegression/branch/main/graph/badge.svg)](https://codecov.io/gh/richelbilderbeek/SimpleLinearRegression)
 
-Branch|[![Travis CI logo](TravisCI.png)](https://travis-ci.org)|[![Codecov logo](Codecov.png)](https://www.codecov.io)
----|---|---
-master|[![Build Status](https://travis-ci.org/richelbilderbeek/SimpleLinearRegression.svg?branch=master)](https://travis-ci.org/richelbilderbeek/SimpleLinearRegression)|[![codecov.io](https://codecov.io/github/richelbilderbeek/SimpleLinearRegression/coverage.svg?branch=master)](https://codecov.io/github/richelbilderbeek/SimpleLinearRegression/branch/master)
-develop|[![Build Status](https://travis-ci.org/richelbilderbeek/SimpleLinearRegression.svg?branch=develop)](https://travis-ci.org/richelbilderbeek/SimpleLinearRegression)|[![codecov.io](https://codecov.io/github/richelbilderbeek/SimpleLinearRegression/coverage.svg?branch=develop)](https://codecov.io/github/richelbilderbeek/SimpleLinearRegression/branch/develop)
+[Go to the nicely rendered website](https://richelbilderbeek.github.io/SimpleLinearRegression/).
 
 Tool to do a simple linear regression, written in C++ and Qt.
 

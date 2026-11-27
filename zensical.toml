@@ -2,7 +2,7 @@
 site_name = "SimpleLinearRegression"
 site_url = "https://richelbilderbeek.github.io/SimpleLinearRegression/"
 repo_url = "https://github.com/richelbilderbeek/SimpleLinearRegression"
-edit_uri = "blob/master/docs/"
+edit_uri = "blob/main/docs/"
 
 nav = [
   { "Start" = "README.md"}
